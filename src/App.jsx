@@ -13,20 +13,25 @@ export default function Portfolio() {
         "Database-driven architecture",
         "REST API backend services",
       ],
+
+      Satus: "Inprogress",
     },
     {
       title: "Airsoft Booking Application",
       description:
         "A booking application created as a first-year Computer Science project for managing airsoft reservations and user interactions.",
       tech: ["Python", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/YOUR_USERNAME/airsoft-booking-app",
+      github: null,
       demo: "#",
+      
       features: [
         "Booking workflow design",
         "User interaction features",
         "Application structure planning",
         "System logic implementation",
       ],
+
+      status: "Completed No GitHub",
     },
   ];
 
@@ -196,19 +201,19 @@ export default function Portfolio() {
                     ))}
                   </ul>
                 </div>
-
-                <div className="flex gap-4 pt-2">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-5 py-2 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-                  >
-                    GitHub
-                  </a>
-
-
-                </div>
+                      
+                                {project.github && (
+                  <div className="flex gap-4 pt-2">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-5 py-2 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
