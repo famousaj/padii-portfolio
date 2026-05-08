@@ -5,6 +5,8 @@ export default function Portfolio() {
       description:
         "A management platform consisting of a website for users and a C# desktop application for administrators powered by a FastAPI backend.",
       tech: ["Python", "FastAPI", "C#", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/famousaj/hostel-finder.git",
+      demo: "#",
       features: [
         "Frontend and backend integration",
         "Admin management functionality",
@@ -17,6 +19,8 @@ export default function Portfolio() {
       description:
         "A booking application created as a first-year Computer Science project for managing airsoft reservations and user interactions.",
       tech: ["Python", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/YOUR_USERNAME/airsoft-booking-app",
+      demo: "#",
       features: [
         "Booking workflow design",
         "User interaction features",
@@ -30,29 +34,56 @@ export default function Portfolio() {
     Backend: ["Python", "FastAPI"],
     Frontend: ["HTML", "CSS", "JavaScript"],
     Desktop: ["C#"],
-    Embedded_Systems: ["Arduino", "ESP32","{C++/C}"],
-    Tools: ["GitHub ", "Supabase ", "VS Code"],
+    Embedded_Systems: ["Arduino", "ESP32", "C/C++"],
+    Tools: ["Git", "GitHub", "Supabase", "VS Code"],
     Creative: ["Video Editing", "3D Modelling"],
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-zinc-950 text-white">
+      {/* Navbar */}
+      <nav className="sticky top-0 z-50 backdrop-blur-md bg-zinc-950/80 border-b border-white/10">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 className="text-xl font-bold tracking-wide">
+            Padii.dev
+          </h1>
+
+          <div className="hidden md:flex gap-6 text-sm text-gray-300">
+            <a href="#about" className="hover:text-white transition">
+              About
+            </a>
+
+            <a href="#projects" className="hover:text-white transition">
+              Projects
+            </a>
+
+            <a href="#skills" className="hover:text-white transition">
+              Skills
+            </a>
+
+            <a href="#contact" className="hover:text-white transition">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="space-y-6">
-          <p className="text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase">
+      <section className="max-w-6xl mx-auto px-6 py-28">
+        <div className="space-y-8">
+          <p className="text-sm font-semibold tracking-[0.25em] text-violet-400 uppercase">
             Portfolio
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight max-w-4xl">
             Padii Kahindi Gandi
           </h1>
 
-          <h2 className="text-2xl md:text-3xl text-gray-600 font-medium">
+          <h2 className="text-2xl md:text-3xl text-gray-400 font-medium">
             Applied Computing Student & Software Developer
           </h2>
 
-          <p className="max-w-3xl text-lg text-gray-700 leading-relaxed">
+          <p className="max-w-3xl text-lg text-gray-400 leading-relaxed">
             I build backend systems, web applications, and practical
             technology-driven solutions using Python, FastAPI, C#, and modern
             web technologies. I am passionate about software engineering,
@@ -62,15 +93,14 @@ export default function Portfolio() {
           <div className="flex flex-wrap gap-4 pt-4">
             <a
               href="mailto:padiiamamea0@gmail.com"
-              className="px-6 py-3 rounded-2xl bg-black text-white font-medium shadow-sm hover:scale-105 transition"
-              style={{ marginRight: 15 }}
+              className="px-6 py-3 rounded-2xl bg-violet-600 hover:bg-violet-500 text-white font-medium shadow-lg shadow-violet-600/20 transition"
             >
-              Contact Me     
+              Contact Me
             </a>
 
             <a
               href="#projects"
-              className="px-6 py-3 rounded-2xl border border-gray-300 font-medium hover:bg-gray-100 transition"
+              className="px-6 py-3 rounded-2xl border border-white/10 hover:bg-white/5 transition"
             >
               View Projects
             </a>
@@ -79,15 +109,18 @@ export default function Portfolio() {
       </section>
 
       {/* About */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-8 items-start">
+      <section
+        id="about"
+        className="max-w-6xl mx-auto px-6 py-20"
+      >
+        <div className="grid md:grid-cols-3 gap-10 items-start">
           <div>
-            <h3 className="text-3xl font-bold">About</h3>
+            <h3 className="text-4xl font-bold">About</h3>
           </div>
 
-          <div className="md:col-span-2 space-y-4 text-gray-700 leading-relaxed text-lg">
+          <div className="md:col-span-2 space-y-6 text-gray-400 leading-relaxed text-lg">
             <p>
-              I am a Computer Science student with experience in software
+              I am an Applied Computing student with experience in software
               development, backend systems, frontend integration, and digital
               creativity. I enjoy building systems that solve real-world
               problems and continuously improving my technical skills.
@@ -96,7 +129,7 @@ export default function Portfolio() {
             <p>
               Beyond software development, I have entrepreneurial experience
               running small businesses and creative interests including writing,
-              3D modelling, and technology projects.
+              3D modelling, and embedded technology projects.
             </p>
           </div>
         </div>
@@ -105,38 +138,43 @@ export default function Portfolio() {
       {/* Projects */}
       <section
         id="projects"
-        className="max-w-6xl mx-auto px-6 py-16"
+        className="max-w-6xl mx-auto px-6 py-20"
       >
-        <div className="flex items-center justify-between mb-10">
-          <h3 className="text-3xl font-bold">Projects</h3>
-          <div className="h-px bg-gray-300 flex-1 ml-6" />
+        <div className="flex items-center gap-6 mb-12">
+          <h3 className="text-4xl font-bold whitespace-nowrap">
+            Projects
+          </h3>
+
+          <div className="h-px bg-white/10 w-full" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition bg-white"
+              className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 hover:border-violet-500/40 hover:shadow-2xl hover:shadow-violet-500/10 transition duration-300"
             >
-              <div className="space-y-5">
+              <div className="space-y-6">
                 <div>
-                  <h4 className="text-2xl font-bold mb-3">
+                  <h4 className="text-2xl font-bold mb-4">
                     {project.title}
                   </h4>
 
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-400 leading-relaxed">
                     {project.description}
                   </p>
                 </div>
 
                 <div>
-                  <h5 className="font-semibold mb-3">Technologies</h5>
+                  <h5 className="font-semibold mb-3 text-white">
+                    Technologies
+                  </h5>
 
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((item, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 rounded-full bg-gray-100 text-sm"
+                        className="px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm"
                       >
                         {item}
                       </span>
@@ -145,16 +183,31 @@ export default function Portfolio() {
                 </div>
 
                 <div>
-                  <h5 className="font-semibold mb-3">Highlights</h5>
+                  <h5 className="font-semibold mb-3 text-white">
+                    Highlights
+                  </h5>
 
-                  <ul className="space-y-2 text-gray-700">
+                  <ul className="space-y-2 text-gray-400">
                     {project.features.map((feature, i) => (
-                      <li key={i} className="flex gap-2">
-                        <span>•</span>
+                      <li key={i} className="flex gap-3">
+                        <span className="text-violet-400">•</span>
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
+                </div>
+
+                <div className="flex gap-4 pt-2">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+                  >
+                    GitHub
+                  </a>
+
+
                 </div>
               </div>
             </div>
@@ -163,25 +216,33 @@ export default function Portfolio() {
       </section>
 
       {/* Skills */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <div className="flex items-center justify-between mb-10">
-          <h3 className="text-3xl font-bold">Skills</h3>
-          <div className="h-px bg-gray-300 flex-1 ml-6" />
+      <section
+        id="skills"
+        className="max-w-6xl mx-auto px-6 py-20"
+      >
+        <div className="flex items-center gap-6 mb-12">
+          <h3 className="text-4xl font-bold whitespace-nowrap">
+            Skills
+          </h3>
+
+          <div className="h-px bg-white/10 w-full" />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Object.entries(skills).map(([category, items], index) => (
             <div
               key={index}
-              className="rounded-3xl border border-gray-200 p-6 bg-gray-50"
+              className="rounded-3xl border border-white/10 bg-white/5 p-6"
             >
-              <h4 className="text-xl font-semibold mb-4">{category}</h4>
+              <h4 className="text-xl font-semibold mb-5">
+                {category.replace("_", " ")}
+              </h4>
 
               <div className="flex flex-wrap gap-2">
                 {items.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-3 py-2 rounded-xl bg-white border border-gray-200 text-sm"
+                    className="px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-sm text-gray-300"
                   >
                     {skill}
                   </span>
@@ -193,42 +254,53 @@ export default function Portfolio() {
       </section>
 
       {/* Experience */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <div className="flex items-center justify-between mb-10">
-          <h3 className="text-3xl font-bold">Experience & Entrepreneurship</h3>
-          <div className="h-px bg-gray-300 flex-1 ml-6" />
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="flex items-center gap-6 mb-12">
+          <h3 className="text-4xl font-bold whitespace-nowrap">
+            Experience & Entrepreneurship
+          </h3>
+
+          <div className="h-px bg-white/10 w-full" />
         </div>
 
-        <div className="space-y-8">
-          <div className="border-l-4 border-black pl-6 space-y-2">
+        <div className="space-y-10">
+          <div className="border-l-2 border-violet-500 pl-6 space-y-2">
             <h4 className="text-2xl font-semibold">
               Computer Lab Representative
             </h4>
-            <p className="text-gray-600">St. Mary’s High School | 2021–2022</p>
-            <p className="text-gray-700 leading-relaxed">
+
+            <p className="text-violet-300">
+              St. Mary’s High School | 2021–2022
+            </p>
+
+            <p className="text-gray-400 leading-relaxed">
               Assisted in managing computer laboratory systems, supported
               practical sessions, and helped maintain proper equipment usage and
               organization.
             </p>
           </div>
 
-          <div className="border-l-4 border-black pl-6 space-y-2">
+          <div className="border-l-2 border-violet-500 pl-6 space-y-2">
             <h4 className="text-2xl font-semibold">
               Hotdog Sales Business
             </h4>
-            <p className="text-gray-600">2023–Present</p>
-            <p className="text-gray-700 leading-relaxed">
+
+            <p className="text-violet-300">2023–Present</p>
+
+            <p className="text-gray-400 leading-relaxed">
               Managed a small-scale food sales business involving customer
               service, inventory handling, and daily business operations.
             </p>
           </div>
 
-          <div className="border-l-4 border-black pl-6 space-y-2">
+          <div className="border-l-2 border-violet-500 pl-6 space-y-2">
             <h4 className="text-2xl font-semibold">
               Airsoft Equipment Business
             </h4>
-            <p className="text-gray-600">2024–2025</p>
-            <p className="text-gray-700 leading-relaxed">
+
+            <p className="text-violet-300">2024–2025</p>
+
+            <p className="text-gray-400 leading-relaxed">
               Managed promotion and sales of airsoft-related equipment while
               engaging with enthusiast communities and customers.
             </p>
@@ -237,21 +309,26 @@ export default function Portfolio() {
       </section>
 
       {/* Contact */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="rounded-[2rem] bg-black text-white p-10 md:p-14">
+      <section
+        id="contact"
+        className="max-w-6xl mx-auto px-6 py-20"
+      >
+        <div className="rounded-[2rem] bg-gradient-to-br from-violet-600 to-purple-800 p-10 md:p-14 shadow-2xl shadow-violet-900/40">
           <div className="max-w-3xl space-y-6">
-            <h3 className="text-4xl font-bold">Let’s Connect</h3>
+            <h3 className="text-4xl font-bold">
+              Let’s Connect
+            </h3>
 
-            <p className="text-gray-300 text-lg leading-relaxed">
-              I am currently looking for internship opportunities, collaborative
-              projects, and opportunities to continue growing as a software
-              developer.
+            <p className="text-violet-100 text-lg leading-relaxed">
+              I am currently looking for internship opportunities,
+              collaborative projects, and opportunities to continue
+              growing as a software developer.
             </p>
 
-            <div className="space-y-2 text-lg">
+            <div className="space-y-3 text-lg">
               <p>Email: padiiamamea0@gmail.com</p>
               <p>Phone: +254 706 900 903</p>
-              <p>Location: Juja Kiambu, Kenya</p>
+              <p>Location: Juja, Kiambu, Kenya</p>
             </div>
           </div>
         </div>
