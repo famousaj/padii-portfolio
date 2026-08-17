@@ -55,11 +55,11 @@ const projects = [
   },
 ];
   const skills = {
+    Embedded_Systems: ["Arduino", "ESP32", "C/C++"],
     Backend: ["Python", "FastAPI"],
     Frontend: ["HTML", "CSS", "JavaScript"],
-    Desktop: ["C#"],
-    Embedded_Systems: ["Arduino", "ESP32", "C/C++"],
-    Tools: ["Git", "GitHub", "Supabase", "VS Code"],
+    Desktop: ["C#", "WPF"],    
+    Tools: ["Git", "GitHub", "Supabase", "VS Code", "Visual Studio" , "PlatForm IO", "Blender", "Shapr3D"],
     Creative: ["Video Editing", "3D Modelling"],
   };
 
