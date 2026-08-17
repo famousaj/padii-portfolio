@@ -5,7 +5,7 @@ const projects = [
     description:
       "An ESP32-based prototype developed to explore Bluetooth communication between a mobile device and a prepaid electricity token system, with the goal of reducing manual token entry and enabling additional electricity monitoring capabilities.",
     tech: ["ESP32", "C++", "BLE", "Bluetooth", "Embedded Systems"],
-    github: "https://github.com/yourusername/kplc-token-prototype.git",
+    github: "https://github.com/famousaj/KPCIU",
     demo: "#",
     features: [
       "ESP32-based embedded system",
