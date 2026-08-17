@@ -1,40 +1,59 @@
 export default function Portfolio() {
-  const projects = [
-    {
-      title: "Hostel Management System",
-      description:
-        "A management platform consisting of a website for users and a C# desktop application for administrators powered by a FastAPI backend.",
-      tech: ["Python", "FastAPI", "C#", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/famousaj/hostel-finder.git",
-      demo: "#",
-      features: [
-        "Frontend and backend integration",
-        "Admin management functionality",
-        "Database-driven architecture",
-        "REST API backend services",
-      ],
+const projects = [
+  {
+    title: "KPLC Smart Token Automation Prototype",
+    description:
+      "An ESP32-based prototype developed to explore Bluetooth communication between a mobile device and a prepaid electricity token system, with the goal of reducing manual token entry and enabling additional electricity monitoring capabilities.",
+    tech: ["ESP32", "C++", "BLE", "Bluetooth", "Embedded Systems"],
+    github: "https://github.com/yourusername/kplc-token-prototype.git",
+    demo: "#",
+    features: [
+      "ESP32-based embedded system",
+      "Bluetooth Low Energy communication",
+      "Mobile-to-device token transmission",
+      "BLE security and pairing",
+      "Prepaid electricity system integration research",
+      "Exploration of electricity monitoring and notifications",
+    ],
 
-      Satus: "Inprogress",
-    },
-    {
-      title: "Airsoft Booking Application",
-      description:
-        "A booking application created as a first-year Computer Science project for managing airsoft reservations and user interactions.",
-      tech: ["Python", "HTML", "CSS", "JavaScript"],
-      github: null,
-      demo: "#",
-      
-      features: [
-        "Booking workflow design",
-        "User interaction features",
-        "Application structure planning",
-        "System logic implementation",
-      ],
+    status: "Completed Prototype",
+  },
 
-      status: "Completed No GitHub",
-    },
-  ];
+  {
+    title: "Hostel Management System",
+    description:
+      "A management platform consisting of a website for users and a C# desktop application for administrators powered by a FastAPI backend.",
+    tech: ["Python", "FastAPI", "C#", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/famousaj/hostel-finder.git",
+    demo: "#",
+    features: [
+      "Frontend and backend integration",
+      "Admin management functionality",
+      "Database-driven architecture",
+      "REST API backend services",
+    ],
 
+    status: "Inprogress",
+  },
+
+  {
+    title: "Airsoft Booking Application",
+    description:
+      "A booking application created as a first-year Computer Science project for managing airsoft reservations and user interactions.",
+    tech: ["Python", "HTML", "CSS", "JavaScript"],
+    github: null,
+    demo: "#",
+
+    features: [
+      "Booking workflow design",
+      "User interaction features",
+      "Application structure planning",
+      "System logic implementation",
+    ],
+
+    status: "Completed No GitHub",
+  },
+];
   const skills = {
     Backend: ["Python", "FastAPI"],
     Frontend: ["HTML", "CSS", "JavaScript"],
